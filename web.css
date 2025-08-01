@@ -1,0 +1,70 @@
+/*Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: gold;
+}
+nav .logo img {
+    width: 100px;
+    height: auto;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #666;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: gold;
+}
+.hero .image {
+    width: 50%;
+    padding-right: 20px;
+}
+.hero .image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+}
+.hero .text {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.hero .text h2 {
+    margin-top: 0;
+}
+@media (max-width: 768px)  {
+.hero  {
+  flex-direction: column;  
+}
+.hero .image, .hero .text {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+}
+}
